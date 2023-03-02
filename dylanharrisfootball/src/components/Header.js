@@ -1,4 +1,4 @@
-import Waves from "../video/waves-22183.mp4";
+import Highlight from "../video/RPReplay_Final1677730475_1.mp4";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
           autoPlay
           loop
           muted
-          src={Waves}
+          src={Highlight}
         ></video>
       </div>
     </section>
