@@ -1,5 +1,15 @@
+import Navbar from "./components/Navbar.js";
+import Header from "./components/Header.js";
+import Stats from "./components/Stats.js";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div>
+      <Navbar />
+      <Header />
+      <Stats />
+    </div>
+  );
 }
 
 export default App;
