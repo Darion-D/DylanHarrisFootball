@@ -20,7 +20,7 @@ function Stats() {
           onExit={() => setTouchdownCounter(false)}
         >
           <div className="flex justify-around mb-16">
-            <div>
+            <div className="flex flex-col justify-center text-center">
               <p>Total Touchdowns</p>
               <p>
                 {touchdownCounter && (
@@ -38,7 +38,7 @@ function Stats() {
         >
           <div className="flex justify-around mb-16">
             <img className="rounded-xl w-96" src={Dylan2} alt="football" />
-            <div>
+            <div className="flex flex-col justify-center text-center">
               <p>Total Yards</p>
               <p>
                 {yardsCounter && (
@@ -53,11 +53,11 @@ function Stats() {
           onExit={() => setAverageYardsCounter(false)}
         >
           <div className="flex justify-around mb-16">
-            <div>
+            <div className="flex flex-col justify-center text-center">
               <p>Average Yards Per Game</p>
               <p>
                 {averageYardsCounter && (
-                  <Countup start={0} end={97.1} duration={2} delay={1} />
+                  <Countup start={0} end={97} duration={2} delay={1} />
                 )}
               </p>
             </div>
@@ -71,7 +71,7 @@ function Stats() {
         >
           <div className="flex justify-around">
             <img className="rounded-xl w-96" src={Dylan4} alt="football" />
-            <div>
+            <div className="flex flex-col justify-center text-center">
               <p>Games with 100+ Yards</p>
               <p>
                 {hundredYardsCounter && (
