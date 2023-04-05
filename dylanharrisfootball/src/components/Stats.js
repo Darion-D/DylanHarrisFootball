@@ -15,12 +15,12 @@ function Stats() {
   return (
     <section className="py-20">
       <div className="max-w-6xl m-auto">
-        <ScrollTrigger
+      <ScrollTrigger
           onEnter={() => setTouchdownCounter(true)}
           onExit={() => setTouchdownCounter(false)}
         >
-          <div className="flex justify-around mb-16">
-            <div className="flex flex-col justify-center text-center">
+          <div className="grid grid-cols-12">
+            <div className="col-span-3 col-start-3 flex flex-col justify-center">
               <p>Total Touchdowns</p>
               <p>
                 {touchdownCounter && (
@@ -28,7 +28,11 @@ function Stats() {
                 )}{" "}
               </p>
             </div>
-            <img className="rounded-xl w-96" src={Dylan1} alt="football" />
+            <img
+              className="col-span-4 col-start-7 rounded-xl w-96"
+              src={Dylan1}
+              alt="football"
+            />
           </div>
         </ScrollTrigger>
 
@@ -36,17 +40,17 @@ function Stats() {
           onEnter={() => setYardsCounter(true)}
           onExit={() => setYardsCounter(false)}
         >
-          <div className="flex justify-around mb-16">
-            <img className="rounded-xl w-96" src={Dylan2} alt="football" />
-            <div className="flex flex-col justify-center text-center">
-              <p>Total Yards</p>
-              <p>
-                {yardsCounter && (
-                  <Countup start={0} end={2331} duration={2} delay={1} />
-                )}{" "}
-              </p>
+          <div className="grid grid-cols-12">
+              <img className="col-span-4 col-start-3 rounded-xl w-96" src={Dylan2} alt="football" />
+              <div className="col-start-7 col-span-4 flex flex-col justify-center items-end">
+                <p>Total Yards</p>
+                <p>
+                  {yardsCounter && (
+                    <Countup start={0} end={2331} duration={2} delay={1} />
+                  )}{" "}
+                </p>
+              </div>
             </div>
-          </div>
         </ScrollTrigger>
         <ScrollTrigger
           onEnter={() => setAverageYardsCounter(true)}
