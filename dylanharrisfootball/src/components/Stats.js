@@ -19,7 +19,7 @@ function Stats() {
           onEnter={() => setTouchdownCounter(true)}
           onExit={() => setTouchdownCounter(false)}
         >
-          <div className="grid grid-cols-12">
+          <div className="grid grid-cols-12 mb-16">
             <div className="col-span-3 col-start-3 flex flex-col justify-center">
               <p>Total Touchdowns</p>
               <p>
@@ -40,7 +40,7 @@ function Stats() {
           onEnter={() => setYardsCounter(true)}
           onExit={() => setYardsCounter(false)}
         >
-          <div className="grid grid-cols-12">
+          <div className="grid grid-cols-12 mb-16">
               <img className="col-span-4 col-start-3 rounded-xl w-96" src={Dylan2} alt="football" />
               <div className="col-start-7 col-span-4 flex flex-col justify-center items-end">
                 <p>Total Yards</p>
@@ -56,8 +56,8 @@ function Stats() {
           onEnter={() => setAverageYardsCounter(true)}
           onExit={() => setAverageYardsCounter(false)}
         >
-          <div className="flex justify-around mb-16">
-            <div className="flex flex-col justify-center text-center">
+          <div className="grid grid-cols-12 mb-16">
+            <div className="col-span-3 col-start-3 flex flex-col justify-center">
               <p>Average Yards Per Game</p>
               <p>
                 {averageYardsCounter && (
@@ -65,7 +65,7 @@ function Stats() {
                 )}
               </p>
             </div>
-            <img className="rounded-xl w-96" src={Dylan3} alt="football" />
+            <img className="col-span-4 col-start-7 rounded-xl w-96" src={Dylan3} alt="football" />
           </div>
         </ScrollTrigger>
 
@@ -73,9 +73,9 @@ function Stats() {
           onEnter={() => setHundredYardsCounter(true)}
           onExit={() => setHundredYardsCounter(false)}
         >
-          <div className="flex justify-around">
-            <img className="rounded-xl w-96" src={Dylan4} alt="football" />
-            <div className="flex flex-col justify-center text-center">
+          <div className="grid grid-cols-12">
+            <img className="col-span-4 col-start-3 rounded-xl w-96" src={Dylan4} alt="football" />
+            <div className="col-start-7 col-span-4 flex flex-col justify-center items-end">
               <p>Games with 100+ Yards</p>
               <p>
                 {hundredYardsCounter && (
